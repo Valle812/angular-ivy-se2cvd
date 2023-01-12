@@ -1,10 +1,11 @@
-import { Component, VERSION } from '@angular/core';
-
-@Component({
-  selector: 'my-app',
-  templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
-})
-export class AppComponent  {
-  name = 'Valentin ' + VERSION.major;
+export class TodoService {
+  data = [
+    {
+      title: "Prepare Workshop",
+      state: "checked",
+    },
+    {
+      title: "Hold the Workshop",
+    },
+  ];
 }
